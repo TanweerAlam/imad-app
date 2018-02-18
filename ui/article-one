@@ -1,1 +1,28 @@
+<html>
+  <head>
+    <title>Article-one</title>
+  </head>
+  <body>
+    <div>
+      <a href="/">Home</a>
+    </div>
+    <hr/>
+    <h3>Article-one</h3>
+    <div>
+      Sep 5, 2016
+    </div>
+    <div>
+      <p>This is some content of article-one. This is some content of article-one. This is some content of article-one. This is some content of article-one.
+      This is some content of article-one. This is some content of article-one. This is some content of article-one. 
+      </p>
 
+      <p>This is some content of article-one. This is some content of article-one. This is some content of article-one. This is some content of article-one.
+      This is some content of article-one. This is some content of article-one. This is some content of article-one. 
+      </p>
+
+      <p>This is some content of article-one. This is some content of article-one. This is some content of article-one. This is some content of article-one.
+      This is some content of article-one. This is some content of article-one. This is some content of article-one. 
+      </p>
+    </div>
+  </body>
+</html>
