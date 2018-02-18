@@ -5,23 +5,45 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleOne = {
-    'title': 'Article-one: Tanweer',
-    'heading': 'Article-one',
-    'date': 'Sep 5, 2016',
-    'content': `
-        <p>This is some content of article-one. This is some content of article-one. This is some content of article-one. This is some content of article-one.
-            This is some content of article-one. This is some content of article-one. This is some content of article-one. 
-        </p>
-    
-        <p>This is some content of article-one. This is some content of article-one. This is some content of article-one. This is some content of article-one.
-            This is some content of article-one. This is some content of article-one. This is some content of article-one. 
-        </p>
-    
-        <p>This is some content of article-one. This is some content of article-one. This is some content of article-one. This is some content of article-one.
-            This is some content of article-one. This is some content of article-one. This is some content of article-one. 
-        </p>
-        `
+var articles = {
+    articleOne : {
+        title: 'Article-one: Tanweer',
+        heading: 'Article-one',
+        date: 'Sep 5, 2016',
+        content: `
+            <p>This is some content of article-one. This is some content of article-one. This is some content of article-one. This is some content of article-one.
+                This is some content of article-one. This is some content of article-one. This is some content of article-one. 
+            </p>
+        
+            <p>This is some content of article-one. This is some content of article-one. This is some content of article-one. This is some content of article-one.
+                This is some content of article-one. This is some content of article-one. This is some content of article-one. 
+            </p>
+        
+            <p>This is some content of article-one. This is some content of article-one. This is some content of article-one. This is some content of article-one.
+                This is some content of article-one. This is some content of article-one. This is some content of article-one. 
+            </p>
+            `
+    },
+    articleTwo : {
+        title: 'Article-two: Tanweer',
+        heading: 'Article-two',
+        date: 'Sep 10, 2016',
+        content: `
+            <p>This is some content of article-two. This is some content of article-two. This is some content of article-two. This is some content of article-two.
+                This is some content of article-two. This is some content of article-two. This is some content of article-two. 
+            </p>
+            `
+    },
+    articleThree: {
+        title: 'Article-three: Tanweer',
+        heading: 'Article-three',
+        date: 'Dec 13, 2016',
+        content: `
+            <p>This is some content of article-three. This is some content of article-three. This is some content of article-three. This is some content of article-three.
+                This is some content of article-three. This is some content of article-three. This is some content of article-three. 
+            </p>
+            `
+    }
 };
 
 function createTemplate(data){
@@ -62,18 +84,6 @@ app.get('/', function (req, res) {
 
 app.get('/', function(req, res){
     res.send(createTemplate(articleOne));
-});
-
-app.get('/article-one', function(req, res){
-    res.sendFile(path.join(__dirname, 'ui', 'article-one.html'))
-});
-
-app.get('/article-two', function(req, res){
-    res.sendFile(path.join(__dirname, 'ui', 'article-two.html'))
-});
-
-app.get('/article-three', function(req, res){
-    res.sendFile(path.join(__dirname, 'ui', 'article-three.html'))
 });
 
 app.get('/ui/style.css', function (req, res) {
