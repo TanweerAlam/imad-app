@@ -7,10 +7,10 @@ app.use(morgan('combined'));
 
 var articles = {
     'articleOne' : {
-        title: 'Article-one: Tanweer',
-        heading: 'Article-one',
-        date: 'Sep 5, 2016',
-        content: `
+        'title': 'Article-one: Tanweer',
+        'heading': 'Article-one',
+        'date': 'Sep 5, 2016',
+        'content': `
             <p>This is some content of article-one. This is some content of article-one. This is some content of article-one. This is some content of article-one.
                 This is some content of article-one. This is some content of article-one. This is some content of article-one. 
             </p>
@@ -25,20 +25,20 @@ var articles = {
             `
     },
     'articleTwo' : {
-        title: 'Article-two: Tanweer',
-        heading: 'Article-two',
-        date: 'Sep 10, 2016',
-        content: `
+        'title': 'Article-two: Tanweer',
+        'heading': 'Article-two',
+        'date': 'Sep 10, 2016',
+        'content': `
             <p>This is some content of article-two. This is some content of article-two. This is some content of article-two. This is some content of article-two.
                 This is some content of article-two. This is some content of article-two. This is some content of article-two. 
             </p>
             `
     },
     'articleThree': {
-        title: 'Article-three: Tanweer',
-        heading: 'Article-three',
-        date: 'Dec 13, 2016',
-        content: `
+        'title': 'Article-three: Tanweer',
+        'heading': 'Article-three',
+        'date': 'Dec 13, 2016',
+        'content': `
             <p>This is some content of article-three. This is some content of article-three. This is some content of article-three. This is some content of article-three.
                 This is some content of article-three. This is some content of article-three. This is some content of article-three. 
             </p>
