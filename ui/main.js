@@ -1,15 +1,21 @@
 var button = document.getElementById('counter');
-var counter = 0;
 
 button.onclick = function(){
     
-    //Make the response to the counter endpoint
-    
+    //create a XMLHttpRequest object
+    var request = new XMLHttpRequest();
     //Capture the response and store it in a variable
-    
-    //Render the counter variable in the span count
-    counter = counter + 1;
-    var span = document.getElementById('count');
-    span.innerHTML = counter.toString();
-    alert(counter);
+    request.onreadystatechange = function(){
+        if(request.readyState === XMLHttpRequest.DONE){
+            //Take some action
+            if(request.status === 200){
+                var counter = request.responseText;
+                var span = document.getElementById('count');
+                span.innerHTML = counter.toString(); 
+            }
+        }
+    }
+    //Make the request
+    httpRequest.open('GET', 'http://tanweeralam1312.imad.hasura-app.io/', true);
+    httpRequest.send();
 };
