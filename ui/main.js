@@ -14,8 +14,8 @@ button.onclick = function(){
                 span.innerHTML = counter.toString(); 
             }
         }
-    }
+    };
     //Make the request
-    httpRequest.open('GET', 'http://tanweeralam1312.imad.hasura-app.io/', true);
-    httpRequest.send();
+    request.open('GET', 'http://tanweeralam1312.imad.hasura-app.io/', true);
+    request.send();
 };
