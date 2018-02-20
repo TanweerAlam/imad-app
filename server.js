@@ -107,9 +107,9 @@ app.get('/ui/madi.png', function (req, res) {
 
 //Recieving the Names 
 var names = [];
-app.get('/submit-name/:name', function(req, res){
+app.get('/submit-name', function(req, res){ //URL: submit-name?name=xxxxx in query
     //Get the name from the request
-    var name = req.params.name;
+    var name = req.query.name;
     
     names.push(name);
     //Sending array is not possible so we'll use JSON strings
